@@ -9,8 +9,15 @@ header {
 }
 
 nav {
+    width: 70%;
     margin-top: 20px;
-    grid-area: left-cell;
+    display: inline;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 20px;
+    width: 150px;
 }
 
 nav a {
@@ -21,16 +28,54 @@ nav a {
     height: 20px;
     background-color: #ffffff80;
     font-size: 17px;
-    box-shadow: 0px 0px 3px 0px #00000066;
+    box-shadow: 0px 0px 3px 0px #00000066, 0px 0px 2px 0px #0000004d;
 }
 
 header div {
-    text-align: right;
+    display: inline;
+    float: right;
+}
+
+button {
+    background-color: #cddc39;
+    cursor: pointer;
+    border: 2px solid #cddc39;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
     color: #ed4190;
 }
+
 
 a:hover {
     color: #fff;
     background-color: #ed4190;
 
+}
+
+footer {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 5px;
+    text-align: center;
+    border: 1px solid #ccc7c8;
+}
+
+footer a>i {
+    color: #ed4190;
+}
+
+.top {
+    padding: 10px;
+    width: 50px;
+    float: right;
+}
+
+footer a>i:hover {
+    color: white;
 }
