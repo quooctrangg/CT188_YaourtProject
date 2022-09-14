@@ -6,6 +6,47 @@ header {
     background-image: url(../IMAGES/header.png);
     border: 5px solid #ccc7c8;
     margin-bottom: 2px;
+    height: 100px;
+    position: relative;
+}
+
+.img1 {
+    height: 100px;
+    top: -30px;
+    position: absolute;
+    animation: img1 ease 3s infinite;
+}
+
+.img2 {
+    height: 70px;
+    top: -5px;
+    position: absolute;
+    animation: img2 ease 3s infinite;
+}
+
+@keyframes img1 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 30%;
+    }
+}
+
+@keyframes img2 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 45%;
+    }
+}
+
+
+body {
+    margin: 0px;
 }
 
 nav {
@@ -39,7 +80,7 @@ header div {
 button {
     background-color: #cddc39;
     cursor: pointer;
-    border: 2px solid #cddc39;
+    border: none;
 }
 
 i {
@@ -54,16 +95,6 @@ i:hover {
 a:hover {
     color: #fff;
     background-color: #ed4190;
-
-}
-
-footer {
-    background-color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 5px;
-    text-align: center;
-    border: 1px solid #ccc7c8;
 }
 
 footer a>i {
@@ -74,8 +105,105 @@ footer a>i {
     padding: 10px;
     width: 50px;
     float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 
 footer a>i:hover {
     color: white;
+}
+
+h1 {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 300;
+    line-height: 34px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    color: #f9086d;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-image: radial-gradient(#cddc39, #fff);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+p {
+    text-align: justify;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div div {
+    display: flex;
+
+}
+
+h2 {
+    color: #ed4190;
+    font-weight: 300;
+}
+
+h3 {
+    color: #ed4190;
+    font-weight: 10;
+}
+
+td {
+    width: 50%;
+}
+
+.huongdan {
+    display: flex;
+}
+
+.huongdan div {
+    display: block;
+    width: 50%;
+}
+
+.logo-dathang {
+    width: 100px;
+}
+
+.dathang {
+    display: flex;
+}
+
+.dathang div {
+    margin: 1px;
+    border: 1px solid #ed4190;
+    padding: 50px 100px;
+    display: block;
+}
+
+footer p {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 5px;
+    text-align: center;
+    border: 1px solid #ccc7c8;
+    position: relative;
+    margin-top: 2px;
+}
+
+.bg-home {
+    width: 100%;
+}
+
+input {
+    margin: -4px;
 }
