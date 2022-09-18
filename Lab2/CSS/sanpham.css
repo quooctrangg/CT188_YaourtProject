@@ -1,0 +1,33 @@
+section div {
+    border: 1px solid red;
+    width: 400px;
+    height: 500px;
+    margin: 5px;
+    display: inline-table;
+    text-align: center;
+    background-image: linear-gradient(to top, #cddc39 0%, #ffffff 10%);
+}
+
+section {
+    text-align: center;
+}
+
+div p {
+    height: 130px;
+}
+
+span {}
+
+span p {
+    display: inline;
+    margin: 1px;
+}
+
+span input {
+    margin: 0px;
+}
+
+span button {
+    background-color: #ffffff;
+    border: 1px solid black;
+}

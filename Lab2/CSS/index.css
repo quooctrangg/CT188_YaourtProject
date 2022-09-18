@@ -24,6 +24,13 @@ header {
     animation: img2 ease 3s infinite;
 }
 
+.img3 {
+    height: 80px;
+    top: 0px;
+    position: absolute;
+    animation: img3 ease 3s infinite;
+}
+
 @keyframes img1 {
     from {
         left: 80%;
@@ -44,6 +51,15 @@ header {
     }
 }
 
+@keyframes img3 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 63%;
+    }
+}
 
 body {
     margin: 0px;
@@ -144,6 +160,7 @@ p {
     margin-top: 0px;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 20px;
 }
 
 div div {
@@ -180,13 +197,20 @@ td {
 
 .dathang {
     display: flex;
+
 }
 
 .dathang div {
     margin: 1px;
     border: 1px solid #ed4190;
     padding: 50px 100px;
-    display: block;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.dathang p {
+    text-align: center;
 }
 
 footer p {
