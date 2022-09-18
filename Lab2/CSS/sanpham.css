@@ -16,8 +16,6 @@ div p {
     height: 130px;
 }
 
-span {}
-
 span p {
     display: inline;
     margin: 1px;
