@@ -16,8 +16,45 @@ div img {
 h2 {
     display: inline;
     color: black;
+    font-weight: 600;
 }
 
 div p {
     display: inline;
+}
+
+.goiy {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+i {
+    background-color: #cddc39;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+
+td {
+    width: 20px;
+    vertical-align: bottom;
+}
+
+input {
+    margin: 0;
+}
+
+.submit {
+    width: 30px;
+    font-size: 9px;
+}
+
+.lienhe {
+    margin-left: 10px;
+}
+
+.lienhe img {
+    position: relative;
+    top: 9px;
 }

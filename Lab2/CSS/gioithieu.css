@@ -1,0 +1,19 @@
+section,
+.h1-text {
+    width: 1014px;
+}
+
+
+
+.dangky {
+    width: 250px;
+    display: inline-table;
+}
+
+.gioithieu {
+    display: inline-table;
+}
+
+.h1-text {
+    margin-right: 0;
+}
