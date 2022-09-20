@@ -52,12 +52,11 @@ nav {
 
 .nav-search-order input {
     margin-right: -5px;
-    height: 26px;
     width: 150px;
 }
 
 .nav-search-order button {
-    height: 32px;
+    height: 21px;
     min-width: 30px;
     color: #fff;
     background-color: #cddc39;
@@ -245,11 +244,16 @@ p {
     padding-left: 5px;
     padding-right: 5px;
     text-align: justify;
+    font-size: 18px;
 }
 
 .icon-order {
     margin-bottom: 5px;
     width: 100%;
+}
+
+.icon-order a {
+    text-decoration: none;
 }
 
 figure {
@@ -258,9 +262,50 @@ figure {
     border: 1px solid #ed4190;
     display: inline-block;
     padding-top: 5px;
+    padding-left: 4px;
     margin: 0;
 }
 
 figure img {
     width: 100px;
+}
+
+figcaption {
+    color: #000;
+}
+
+.product div {
+    border: 1px solid red;
+    width: 32%;
+    height: 500px;
+    margin: 1px;
+    display: inline-table;
+    text-align: center;
+    background-image: linear-gradient(to top, #cddc39 0%, #ffffff 10%);
+}
+
+.product {
+    text-align: center;
+}
+
+span button {
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+span input {
+    margin: 0px;
+}
+
+span p {
+    display: inline;
+    margin: 1px;
+}
+
+span {
+    vertical-align: bottom;
+}
+
+.product-item p {
+    height: 160px;
 }
