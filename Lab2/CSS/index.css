@@ -2,9 +2,15 @@
     font-family: "helvetica", "arial", "sans-serif";
 }
 
+body {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header {
     background-image: url(../IMAGES/header.png);
-    border: 5px solid #ccc7c8;
+    border: 1px solid #ccc7c8;
     margin-bottom: 2px;
     height: 100px;
     position: relative;
@@ -12,6 +18,56 @@ header {
 
 nav a {
     text-decoration: none;
+    border: 1px solid #fff;
+    padding: 2px 4px 2px 4px;
+    margin: 3px;
+    color: #ed4190;
+    background-color: #ffffff80;
+    border-radius: 5px;
+    font-size: 17px;
+    height: 20px;
+    box-shadow: 0px 0px 3px 0px #00000066, 0px 0px 2px 0px #0000004d;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.nav-link {
+    flex-grow: 0.5;
+    text-align: center;
+}
+
+.nav-search-order {
+    flex-grow: 40;
+    text-align: end;
+    width: 26px;
+}
+
+.nav-search-order input {
+    margin-right: -5px;
+    height: 26px;
+    width: 150px;
+}
+
+.nav-search-order button {
+    height: 32px;
+    min-width: 30px;
+    color: #fff;
+    background-color: #cddc39;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-search-order button:hover {
+    color: #ed4190;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: #ed4190;
 }
 
 .img1 {
@@ -65,173 +121,51 @@ nav a {
     }
 }
 
-body {
-    margin: 0px;
+footer {
+    color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #ccc7c8;
+    margin-top: 2px;
+    position: relative;
+    text-align: center;
 }
 
-nav {
-    width: 70%;
-    margin-top: 20px;
-    display: inline;
-}
-
-.logo {
-    display: block;
-    margin-bottom: 20px;
-    width: 150px;
-}
-
-nav a {
-    margin: 3px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    color: #ed4190;
-    height: 20px;
-    background-color: #ffffff80;
-    font-size: 17px;
-    box-shadow: 0px 0px 3px 0px #00000066, 0px 0px 2px 0px #0000004d;
-}
-
-header div {
-    display: inline;
-    float: right;
-}
-
-button {
-    background-color: #cddc39;
-    cursor: pointer;
-    border: none;
-}
-
-i {
-    color: white;
-}
-
-i:hover {
-    color: #ed4190;
-}
-
-
-a:hover {
-    color: #fff;
-    background-color: #ed4190;
-}
-
-footer a>i {
-    color: #ed4190;
-}
-
-.top {
-    padding: 10px;
+.footer-top {
     width: 50px;
-    float: right;
     position: fixed;
+    padding: 10px;
+    color: #ed4190;
     bottom: 0;
     right: 0;
 }
 
-footer a>i:hover {
-    color: white;
+.footer-icon {
+    color: #ed4190;
 }
 
 h1 {
     font-family: "Open Sans", "sans-serif";
     font-weight: 300;
     line-height: 34px;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #f9086d;
     margin-top: 12px;
     margin-bottom: 16px;
-    color: #f9086d;
-    font-size: 28px;
-    text-transform: uppercase;
     text-align: center;
     position: relative;
 }
 
-h1::before {
+h1::after {
     content: "";
-    position: absolute;
     width: 200px;
     height: 3px;
-    background-image: radial-gradient(#cddc39, #fff);
-    top: 100%;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    position: absolute;
     left: 50%;
+    top: 60%;
+    background-image: radial-gradient(#cddc39, #fff);
     transform: translateX(-50%);
-}
-
-
-p {
-    text-align: justify;
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-div div {
-    display: flex;
-
-}
-
-h2 {
-    color: #ed4190;
-    font-weight: 300;
-}
-
-h3 {
-    color: #ed4190;
-    font-weight: 10;
-}
-
-td {
-    width: 50%;
-}
-
-.huongdan {
-    display: flex;
-}
-
-.huongdan div {
-    display: block;
-    width: 50%;
-}
-
-.logo-dathang {
-    width: 100px;
-}
-
-.dathang {
-    display: flex;
-
-}
-
-.dathang div {
-    margin: 1px;
-    border: 1px solid #ed4190;
-    padding: 50px 100px;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-}
-
-.dathang p {
-    text-align: center;
-}
-
-footer p {
-    background-color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 5px;
-    text-align: center;
-    border: 1px solid #ccc7c8;
-    position: relative;
-    margin-top: 2px;
-}
-
-.bg-home {
-    width: 100%;
-}
-
-input {
-    margin: -4px;
 }
