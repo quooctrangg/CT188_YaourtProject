@@ -16,6 +16,10 @@ header {
     position: relative;
 }
 
+.icon-home {
+    margin-left: 10px;
+}
+
 nav a {
     text-decoration: none;
     border: 1px solid #fff;
@@ -128,7 +132,13 @@ footer {
     border: 1px solid #ccc7c8;
     margin-top: 2px;
     position: relative;
+    height: 50px;
+}
+
+footer p {
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 15px;
 }
 
 .footer-top {
@@ -168,4 +178,89 @@ h1::after {
     top: 60%;
     background-image: radial-gradient(#cddc39, #fff);
     transform: translateX(-50%);
+}
+
+h2 {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #f90b6d;
+}
+
+h3 {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #f90b6d;
+}
+
+.top {
+    grid-area: top;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+.left1 {
+    grid-area: left1;
+}
+
+.right1 {
+    grid-area: right1;
+}
+
+.content-left {
+    display: grid;
+    grid-template-areas: 'top top top top top top top top top top'
+        'left left left left left left left right right right ';
+}
+
+.content-right {
+    display: grid;
+    grid-template-areas: 'top top top top top top top top top top'
+        'left left left right right right right right right right';
+}
+
+.content-center {
+    display: grid;
+    grid-template-areas: 'top top top top top top top top top top'
+        'left1 left1 left1 left1 left1 right1 right1 right1 right1 right1'
+        'left left left left left right right right right right';
+}
+
+p {
+    margin-top: 0;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+}
+
+.icon-order {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+figure {
+    text-align: center;
+    width: 24%;
+    border: 1px solid #ed4190;
+    display: inline-block;
+    padding-top: 5px;
+    margin: 0;
+}
+
+figure img {
+    width: 100px;
 }
