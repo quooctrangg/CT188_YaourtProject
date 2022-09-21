@@ -77,21 +77,21 @@ nav {
     height: 100px;
     top: -30px;
     position: absolute;
-    animation: img1 ease 3s infinite;
+    animation: img1 ease 3s both;
 }
 
 .img2 {
     height: 70px;
     top: -5px;
     position: absolute;
-    animation: img2 ease 3s infinite;
+    animation: img2 ease 3s both;
 }
 
 .img3 {
     height: 80px;
     top: 0px;
     position: absolute;
-    animation: img3 ease 3s infinite;
+    animation: img3 ease 3s both;
 }
 
 @keyframes img1 {
@@ -308,4 +308,150 @@ span {
 
 .product-item p {
     height: 160px;
+}
+
+.contact-main {
+    border: 1px solid #ccc7c8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icon-checkin {
+    width: 15px;
+    background-color: #cddc39;
+    padding: 2px 10px;
+    display: inline;
+}
+
+.check-in h2,
+.check-in p {
+    display: inline;
+}
+
+.check-in h2 {
+    color: black;
+    font-weight: 600;
+}
+
+.from-feedback {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.from-feedback-icon i {
+    background-color: #cddc39;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.from-feedback-icon {
+    vertical-align: bottom;
+}
+
+.submit {
+    width: 40px;
+}
+
+.from-feedback-icon+td input {
+    height: 25px;
+    width: 250px;
+}
+
+.from-feedback-icon+td select {
+    height: 25px;
+    width: 250px;
+}
+
+.introduce {
+    grid-area: introduce;
+}
+
+.introduce1 {
+    grid-area: introduce1;
+}
+
+.introduce2 {
+    grid-area: introduce2;
+}
+
+.introduce3 {
+    grid-area: introduce3;
+}
+
+.introduce4 {
+    grid-area: introduce4;
+}
+
+.introduce-list {
+    display: grid;
+    grid-template-areas: 'introduce introduce introduce introduce  introduce4'
+        'introduce1 introduce1 introduce1 introduce1 introduce4'
+        'introduce2 introduce2 introduce2 introduce2 introduce4'
+        'introduce3 introduce3 introduce3 introduce3 introduce4';
+
+}
+
+.introduce img {
+    max-width: 100%;
+}
+
+.introduce4 h1::after {
+    top: 85%;
+}
+
+.introduce-list h1 {
+    font-weight: 500;
+}
+
+.news-item1 {
+    grid-area: item1;
+}
+
+.news-item2 {
+    grid-area: item2;
+}
+
+.news-list {
+    display: grid;
+    grid-template-areas: 'item2 item1 item1 item1 item1 item1';
+    column-gap: 10px;
+}
+
+.img-news {
+    width: 100%;
+}
+
+.aside-img-news {
+    width: 100%;
+}
+
+.img-news {
+    grid-area: news1;
+}
+
+.text-news {
+    grid-area: news2;
+}
+
+.topic-news {
+    grid-area: topic;
+}
+
+.news {
+    display: grid;
+    grid-template-areas: 'topic topic topic topic'
+        'news2 news2 new2 news1'
+        'news2 news2 new2 news1';
+    margin: 10px;
+}
+
+.news-item2 h1::after {
+    top: 75%;
+}
+
+.aside-img-news+h2 {
+    text-align: justify;
 }

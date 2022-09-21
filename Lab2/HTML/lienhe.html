@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -6,7 +7,6 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../IMAGES/favicon.ico">
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/fontawesome-free-6.2.0-web/css/all.css">
-    <link rel="stylesheet" href="../CSS/lienhe.css">
 </head>
 
 <body>
@@ -33,30 +33,30 @@
         <img class="img3" src="../IMAGES/header-img3.png" alt="header-img3">
     </header>
     <main>
-        <article>
+        <article class="contact-main">
             <section>
                 <h1>Liên Hệ</h1>
-                <div class="lienhe">
-                    <img src="../IMAGES/lienhe/check-in.png" alt="">
+                <div class="check-in">
+                    <img class="icon-checkin" src="../IMAGES/lienhe/check-in.png" alt="">
                     <h2>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</h2>
                     <p>Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cảm ơn.
                     </p>
                 </div>
             </section>
             <section>
-                <h1>GỢI Ý</h1>
+                <h1>GÓP Ý</h1>
                 <div>
-                    <table class=" goiy">
+                    <table class="from-feedback">
                         <tr>
-                            <td><i class="fa-solid fa-user"></i></td>
+                            <td class="from-feedback-icon"><i class="fa-solid fa-user"></i></td>
                             <td><input type="text" name="hoten" placeholder="Vui lòng nhập họ tên của bạn"></td>
                         </tr>
                         <tr>
-                            <td><i class="fa-solid fa-envelope"></i></td>
+                            <td class="from-feedback-icon"><i class="fa-solid fa-envelope"></i></td>
                             <td><input type="email" name="email" placeholder="Vui lòng nhập email của bạn"></td>
                         </tr>
                         <tr>
-                            <td><i class="fa-sharp fa-solid fa-list-ul"></i></td>
+                            <td class="from-feedback-icon"><i class="fa-sharp fa-solid fa-list-ul"></i></td>
                             <td>
                                 <select name="" id="">
                                     <option value="">Về Sản Phẩm/Dịch Vụ</option>
@@ -66,7 +66,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="from-feedback-icon">
                                 <i class="fa-solid fa-file"></i>
                             </td>
                             <td><textarea name="" id="" cols="50" rows="7"
@@ -74,9 +74,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <div class="center-block">
-                                    <input class="submit" type="submit" value="Gửi">
-                                </div>
+                                <input class="submit" type="submit" value="Gửi">
                             </td>
                         </tr>
                     </table>
