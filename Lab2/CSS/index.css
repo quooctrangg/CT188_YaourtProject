@@ -455,3 +455,49 @@ span {
 .aside-img-news+h2 {
     text-align: justify;
 }
+
+.register {
+    border: 1px solid #ccc7c8;
+    margin-top: 50px;
+}
+
+.register-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.register-icon i {
+    color: white;
+    background-color: #cddc39;
+    width: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+.register-icon {
+    width: 20px;
+}
+
+.login {
+    border: 1px solid #ccc7c8;
+    margin-top: 50px;
+}
+
+.img-login {
+    width: 40%;
+}
+
+.icon-login {
+    color: white;
+    background-color: #cddc39;
+    width: 25px;
+    text-align: center;
+    padding: 5px;
+}
+
+.login-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

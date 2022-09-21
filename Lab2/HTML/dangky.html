@@ -34,46 +34,49 @@
     </header>
     <main>
         <article>
-            <section>
+            <section class="register">
                 <h1>ĐĂNG KÝ</h1>
-                <table>
-                    <tr>
-                        <td>Email</td>
-                        <td><input type="email" name="email" placeholder="Vui lòng nhập email"></th>
-                    </tr>
-                    <tr>
-                        <td>Mật Khẩu</td>
-                        <td><input type="text" name="psw" placeholder="Vui lòng nhập mật khẩu"></th>
-                    </tr>
-                    <tr>
-                        <td>Nhập Lại Mật Khẩu</td>
-                        <td><input type="text" name="psw2" placeholder="Vui lòng nhập mật khẩu"></th>
-                    </tr>
-                    <tr>
-                        <td>Cấp Độ Thành Viên</td>
-                        <td>
-                            <input type="radio" name="bac">Bạc
-                            <input type="radio" name="vang">Vàng
-                            <input type="radio" name="bachkim">Bạch Kim
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Ảnh Đại Diện</td>
-                        <td><input type="file" name="file"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Thông qua việc tạo tài khoản, bạn đồng ý với <a href="">Điều Khoản & Quyền riêng
-                                tư
-                                của chúng
-                                tôi.</a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="reset" value="Hủy">
-                            <input type="submit" value="Đăng Ký">
-                        </td>
-                    </tr>
-                </table>
+                <form action="">
+                    <table class="register-form">
+                        <tr>
+                            <td class="register-icon"><i class="fa-solid fa-envelope"></i></td>
+                            <td><input type="email" name="email" placeholder="Vui lòng nhập email"></th>
+                        </tr>
+                        <tr>
+                            <td class="register-icon"><i class="fa-solid fa-key"></i></td>
+                            <td><input type="text" name="psw" placeholder="Vui lòng nhập mật khẩu"></th>
+                        </tr>
+                        <tr>
+                            <td class="register-icon"><i class="fa-solid fa-key"></i></td>
+                            <td><input type="text" name="psw2" placeholder="Vui lòng nhập mật khẩu"></th>
+                        </tr>
+                        <tr>
+                            <td class="register-icon"><i class="fa-regular fa-dice-d20"></i></td>
+                            <td>
+                                <input type="radio" name="bac">Bạc
+                                <input type="radio" name="vang">Vàng
+                                <input type="radio" name="bachkim">Bạch Kim
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="register-icon"><i class="fa-sharp fa-solid fa-user-tie"></i></td>
+                            <td><input type="file" name="file"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Thông qua việc tạo tài khoản, bạn đồng ý với <a href="">Điều Khoản & Quyền
+                                    riêng
+                                    tư
+                                    của chúng
+                                    tôi.</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Đăng Ký">
+                                <input type="reset" value="Hủy">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </section>
         </article>
     </main>

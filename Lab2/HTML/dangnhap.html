@@ -33,37 +33,41 @@
         <img class="img3" src="../IMAGES/header-img3.png" alt="header-img3">
     </header>
     <main>
-        <fieldset>
-            <legend>ĐĂNG NHẬP</legend>
-            <table>
-                <tr>
-                    <td colspan="2">
-                        <img src="../IMAGES/dangnhap/userlogin.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td><input type="email" name="email" placeholder="Nhập email"></td>
-                </tr>
-                <tr>
-                    <td>Mật Khẩu</td>
-                    <td><input type="text" name="psw" placeholder="Nhập mật khẩu"></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <div class="center-block">
-                            <input type="submit" value="Đăng Nhập">
-                            <input type="reset" value="Hủy">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        Bạn quên <a href="">Mật Khẩu?</a> <input type="checkbox"> Ghi nhớ cho lần đăng nhập sau
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
+        <article>
+            <section class="login">
+                <h1>ĐĂNG NHẬP</h1>
+                <form action="">
+                    <table class="login-form">
+                        <tr>
+                            <td colspan="2">
+                                <img class="img-login" src="../IMAGES/dangnhap/userlogin.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="icon-login"><i class="fa-solid fa-envelope"></i></td>
+                            <td><input type="email" name="email" placeholder="Nhập email"></td>
+                        </tr>
+                        <tr>
+                            <td class="icon-login"><i class="fa-solid fa-key"></td>
+                            <td><input type="text" name="psw" placeholder="Nhập mật khẩu"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Bạn quên <a href="">Mật Khẩu?</a> <input type="checkbox"> Ghi nhớ cho lần đăng nhập sau
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="center-block">
+                                    <input type="submit" value="Đăng Nhập">
+                                    <input type="reset" value="Hủy">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </article>
     </main>
     <footer>
         <p>&copy 2021 Bản quyền thuộc FreeezeVN
