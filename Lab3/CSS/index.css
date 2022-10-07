@@ -1,0 +1,483 @@
+/* Trang chu */
+.page {
+    display            : grid;
+    grid-template-areas: 'header-cell'
+        'main-cell'
+        'footer-cell';
+    margin     : 0 auto;
+    padding    : 0 5px;
+    width      : 1024px;
+    font-family: Helvetica, arial, sans-serif;
+    font-size  : 1.2em;
+}
+
+.page__header {
+    background-image: url(../IMAGES/header.png);
+    margin-bottom   : 2px;
+    border-radius   : 5px;
+    padding         : 0 5px;
+    height          : 110px;
+    grid-area       : header-cell;
+}
+
+.page__main {
+    grid-area       : main-cell;
+    padding-left    : 5px;
+    padding-right   : 5px;
+    border          : 1px solid #ccc7c8;
+    background-color: #fff;
+}
+
+.page__footer {
+    grid-area: footer-cell;
+}
+
+.header__nav {
+    display   : flex;
+    padding   : 10px;
+    margin-top: 20px;
+}
+
+.nav__link {
+    text-decoration : none;
+    border          : 1px solid #fff;
+    padding         : 2px 4px 2px 4px;
+    margin          : 3px;
+    color           : #ed4190;
+    background-color: #ffffff80;
+    border-radius   : 5px;
+    font-size       : 17px;
+    height          : 20px;
+    box-shadow      : 0px 0px 3px 0px #00000066, 0px 0px 2px 0px #0000004d;
+    flex-grow       : 0.5;
+    text-align      : center;
+    vertical-align  : middle;
+}
+
+.link__img-logo {
+    margin-left: 10px;
+}
+
+.nav__search {
+    flex-grow : 40;
+    text-align: end;
+    width     : 26px;
+}
+
+.form__input-text {
+    font-size: 15px;
+    width    : 170px;
+}
+
+.form__icon-search,
+.form__icon-shopping {
+    min-width       : 30px;
+    color           : #fff;
+    background-color: #cddc39;
+    cursor          : pointer;
+    text-align      : center;
+    border          : #ccc7c8 solid 1px;
+    padding         : 2px;
+}
+
+.form__icon-search:hover,
+.form__icon-shopping:hover {
+    color: #ed4190;
+}
+
+.nav__link:hover {
+    color           : #fff;
+    background-color: #ed4190;
+}
+
+.img1 {
+    height   : 100px;
+    top      : -30px;
+    position : absolute;
+    animation: img1 ease 3s both;
+}
+
+.img2 {
+    height   : 70px;
+    top      : -5px;
+    position : absolute;
+    animation: img2 ease 3s both;
+}
+
+.img3 {
+    height   : 80px;
+    top      : 0px;
+    position : absolute;
+    animation: img3 ease 3s both;
+}
+
+@keyframes img1 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 30%;
+    }
+}
+
+@keyframes img2 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 45%;
+    }
+}
+
+@keyframes img3 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 63%;
+    }
+}
+
+.page__one-columns {
+    display            : grid;
+    grid-template-areas: 'left-cell''article-cell''right-cell';
+}
+
+.page__two-columns-right {
+    display              : grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas  : 'left-cell article-cell';
+}
+
+.page__two-columns-left {
+    display              : grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas  : 'article-cell right-cell';
+}
+
+.page__three-columns {
+    display              : grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas  : 'left-cell article-cell right-cell';
+}
+
+.left_cell {
+    grid-area: left-cell;
+}
+
+.right_cell {
+    grid-area: right-cell;
+}
+
+.article_cell {
+    grid-area: article-cell;
+}
+
+.page__footer {
+    color        : #000;
+    padding-left : 5px;
+    padding-right: 5px;
+    border       : 1px solid #ccc7c8;
+    margin-top   : 2px;
+    position     : relative;
+    height       : 50px;
+}
+
+.footer__text {
+    text-align   : center;
+    margin-bottom: 0;
+    margin-top   : 15px;
+}
+
+.footer-top {
+    width   : 50px;
+    position: fixed;
+    padding : 10px;
+    color   : #ed4190;
+    bottom  : 0;
+    right   : 23%;
+}
+
+.footer__link {
+    color: #ed4190;
+}
+
+.article__section {}
+
+.article__title {
+    font-family   : "Open Sans", "sans-serif";
+    font-weight   : 300;
+    line-height   : 34px;
+    text-transform: uppercase;
+    font-size     : 28px;
+    color         : #f9086d;
+    margin-top    : 12px;
+    margin-bottom : 16px;
+    text-align    : center;
+    position      : relative;
+    clear         : both;
+}
+
+.article__title::after {
+    content         : "";
+    position        : absolute;
+    left            : 50%;
+    width           : 200px;
+    height          : 4px;
+    bottom          : -5px;
+    background-image: radial-gradient(#cddc39, #fff);
+    transform       : skewX(-12deg) translateX(-50%);
+}
+
+.section__title {
+    font-family  : "Open Sans", "sans-serif";
+    font-weight  : 500;
+    line-height  : 28px;
+    font-size    : 24px;
+    margin-top   : 5px;
+    margin-bottom: 10px;
+    color        : #f90b6d;
+    clear        : both;
+
+}
+
+.section__content--float-right {
+    float: right;
+}
+
+.section__content--float-left {
+    float: left;
+
+}
+
+.section__img--float-left {
+    float: left;
+}
+
+.section__video--float-right {
+    float: right;
+}
+
+.section__video,
+.section__img {
+    width: 29%;
+}
+
+.section__content {
+    text-align   : justify;
+    width        : 70%;
+    padding      : 0 5px;
+    margin-bottom: 5px;
+    margin-top   : 0;
+}
+
+.div__title {
+    font-family  : "Open Sans", "sans-serif";
+    font-weight  : 500;
+    line-height  : 24px;
+    font-size    : 20px;
+    margin-top   : 5px;
+    margin-bottom: 10px;
+    color        : #f90b6d;
+}
+
+.section__div--two-column {
+    column-count: 2;
+}
+
+.column-break {
+    break-before: column;
+}
+
+.section__div--order-steps {
+    margin-bottom: 5px;
+    width        : 100%;
+    text-align   : center;
+}
+
+.photo-order-process {
+    display      : inline-block;
+    border-radius: 5px;
+    border       : 1px solid #ed4190;
+    padding-top  : 5px;
+    width        : 24%;
+    margin       : 0;
+}
+
+.photo-order-process__img {
+    width: 50%;
+}
+
+.photo-order-process__caption {
+    color: blue;
+}
+
+/* San Pham */
+
+.article__main {}
+
+.section__product {
+    display: flex;
+}
+
+.product__div {
+    margin          : 3px;
+    border          : 1px solid #dbd7d9;
+    flex            : 1;
+    text-align      : center;
+    background-image: linear-gradient(to top, #cddc39 0%, #ffffff 10%);
+}
+
+.div__span {
+    width  : 100%;
+    margin : 4px;
+    padding: 3px;
+    display: block;
+}
+
+.section__content--text {
+    text-align: justify;
+    margin    : 5px;
+    height    : 150px;
+}
+
+/* Lien He */
+
+.contact-main {
+    margin-top   : 10px;
+    margin-bottom: 10px;
+}
+
+.div__img--check-in {
+    width           : 15px;
+    background-color: #cddc39;
+    padding         : 2px 10px;
+    display         : inline;
+}
+
+.section__div--check-in p {
+    display: inline;
+}
+
+.section__div--check-in h2 {
+    display    : inline;
+    font-weight: 600;
+}
+
+.from__table {
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.form__table-icon {
+    background-color: #cddc39;
+    color           : #fff;
+    padding         : 5px 10px;
+    font-size       : 20px;
+    width           : 20px;
+    text-align      : center;
+}
+
+.form__table-select,
+.form__table-input {
+    height   : 25px;
+    width    : 250px;
+    font-size: 15px;
+}
+
+.form__table-textarea {
+    font-size: 15px;
+}
+
+.form__table-submit {
+    width: 40px;
+}
+
+td {
+    vertical-align: bottom;
+}
+
+/* Gioi Thieu */
+
+.div__img {
+    width        : 100%;
+    border-radius: 10px;
+}
+
+.section__text-justify {
+    text-align: justify;
+    margin    : 0 5px;
+}
+
+/* Tin Tuc */
+
+.div__img-news {
+    width        : 28%;
+    border-radius: 10px;
+}
+
+.section__content--float-left {
+    float: left;
+}
+
+.section__img--float-right {
+    float: right;
+}
+
+.div__content {
+    text-align   : justify;
+    width        : 70%;
+    padding      : 0 5px;
+    margin-bottom: 5px;
+    margin-top   : 0;
+}
+
+.aside__div--img {
+    width        : 100%;
+    border-radius: 10px;
+}
+
+.aside__title {
+    font-family  : "Open Sans", "sans-serif";
+    font-weight  : 500;
+    line-height  : 28px;
+    font-size    : 24px;
+    margin-top   : 5px;
+    margin-bottom: 10px;
+    color        : #f90b6d;
+    clear        : both;
+    text-align   : justify;
+}
+
+/* Dang Ky */
+
+.td-icon {
+    width: 40px;
+}
+
+.from__table {
+    width: 50%;
+}
+
+.td--input-radio {
+    font-size: 20px;
+}
+
+.form__table--reset-login,
+.form__table--reset-register,
+.form__table--input-register {
+    font-size: 15px;
+}
+
+/* Dang Nhap */
+
+.img-login {
+    width: 40%;
+}
+
+.td-text {
+    font-size: 20px;
+}
