@@ -4,62 +4,82 @@
     <meta charset="UTF-8">
     <title>Đăng Nhập</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../IMAGES/favicon.ico">
-    <link rel="stylesheet" href="../CSS/header.css">
-    <link rel="stylesheet" href="../CSS/footer.css">\
-    <link rel="stylesheet" href="../CSS/dangnhap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/index.css">
 </head>
 
-<body>
-    <header>
+<body class="page">
+    <header class="page__header">
         <a href="./trangchu.html">
-            <img src="../IMAGES/logo.png" alt="Logo">
+            <img class="link__img-logo" src="../IMAGES/logo.png" alt="Logo">
         </a>
-        <nav>
-            <a href="./trangchu.html">Trang Chủ</a>
-            <a href="./gioithieu.html">Giới Thiệu</a>
-            <a href="./sanpham.html">Sản Phẩm</a>
-            <a href="./tintuc.html">Tin Tức</a>
-            <a href="./dangnhap.html">Đăng Nhập</a>
-            <a href="./dangky.html">Đăng Ký</a>
-            <a href="./lienhe.html">Liên Hệ</a>
+        <nav class="header__nav">
+            <a class="nav__link" href="./trangchu.html">Trang Chủ</a>
+            <a class="nav__link" href="./gioithieu.html">Giới Thiệu</a>
+            <a class="nav__link" href="./sanpham.html">Sản Phẩm</a>
+            <a class="nav__link" href="./tintuc.html">Tin Tức</a>
+            <a class="nav__link" href="./dangnhap.html">Đăng Nhập</a>
+            <a class="nav__link" href="./dangky.html">Đăng Ký</a>
+            <a class="nav__link" href="./lienhe.html">Liên Hệ</a>
+            <div class="nav__search">
+                <form action="" method="get" class="search__form">
+                    <input class="form__input-text" type="text" placeholder="Nhập nội dung cần tìm...">
+                    <i class="fa fa-search form__icon-search"></i>
+                    <i class="fa fa-shopping-cart form__icon-shopping"></i>
+                </form>
+            </div>
         </nav>
+        <img class="img1" src="../IMAGES/header-img1.png" alt="header-img1">
+        <img class="img2" src="../IMAGES/header-img2.png" alt="header-img2">
+        <img class="img3" src="../IMAGES/header-img3.png" alt="header-img3">
     </header>
-    <main>
-        <fieldset>
-            <legend>ĐĂNG NHẬP</legend>
-            <table>
-                <tr>
-                    <td colspan="2">
-                        <img src="../IMAGES/dangnhap/userlogin.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td><input type="email" name="email" placeholder="Nhập email"></td>
-                </tr>
-                <tr>
-                    <td>Mật Khẩu</td>
-                    <td><input type="text" name="psw" placeholder="Nhập mật khẩu"></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <div class="center-block">
-                            <input type="submit" value="Đăng Nhập">
-                            <input type="reset" value="Hủy">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        Bạn quên <a href="">Mật Khẩu?</a> <input type="checkbox"> Ghi nhớ cho lần đăng nhập sau
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
+    <main class="page__main">
+        <article class="article__main">
+            <section class="article__section">
+                <h1 class="article__title">ĐĂNG NHẬP</h1>
+                <form action="">
+                    <table class="from__table">
+                        <tr>
+                            <td colspan="2">
+                                <img class="img-login" src="../IMAGES/dangnhap/userlogin.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-icon"><i class="form__table-icon fa-solid fa-envelope"></i></td>
+                            <td><input class="form__table-input" type="email" name="email" placeholder="Nhập email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-icon"><i class="form__table-icon fa-solid fa-key"></td>
+                            <td><input class="form__table-input" type="text" name="psw" placeholder="Nhập mật khẩu">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p class="td-text">Bạn quên <a href="">Mật Khẩu?</a> <input type="checkbox"> Ghi nhớ cho
+                                    lần đăng nhập
+                                    sau</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="center-block">
+                                    <input class="form__table--reset-login" type="submit" value="Đăng Nhập">
+                                    <input class="form__table--input-register" type="reset" value="Hủy">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </article>
     </main>
-    <footer class=" footer">
-        <p>&copy 2021 Bản quyền thuộc FreeezeVN <a href="">facebook</a> <a href="">twitter</a> <a href="">pinterest</a>
-            <a href="#">Về Đầu Trang</a>
+    <footer class="page__footer">
+        <p class="footer__text">&copy 2021 Bản quyền thuộc FreeezeVN
+            <a class="footer__link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="footer__link" href="https://twitter.com/?lang=vi"><i class="fa-brands fa-twitter"></i></a>
+            <a class="footer__link" href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#"><img class="footer-top" src="../IMAGES/top.png" alt=""></a>
         </p>
     </footer>
 </body>
