@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
 
+<script src="../JS/index.js"></script>
+
 <body class="page">
     <header class="page__header">
         <a href="./trangchu.html">
@@ -23,10 +25,13 @@
             <a class="nav__link" href="./dangky.html">Đăng Ký</a>
             <a class="nav__link" href="./lienhe.html">Liên Hệ</a>
             <div class="nav__search">
-                <form action="" method="get" class="search__form">
-                    <input class="form__input-text" type="text" placeholder="Nhập nội dung cần tìm...">
-                    <i class="fa fa-search form__icon-search"></i>
-                    <i class="fa fa-shopping-cart form__icon-shopping"></i>
+                <form action="timkiem.html" method="get" class="search__form">
+                    <input id="value__text" class="form__input-text" type="text" placeholder="Nhập nội dung cần tìm..."
+                        onkeypress="return runScript(event)">
+                    <button type="button" class="form__button-search" onclick="search()"><i
+                            class="fa fa-search form__icon-search"></i></button>
+                    <button type="button" class="form__button-shopping"><i
+                            class="fa fa-shopping-cart form__icon-shopping"></i></button>
                 </form>
             </div>
         </nav>

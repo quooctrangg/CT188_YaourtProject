@@ -70,14 +70,17 @@
 }
 
 .form__icon-search,
-.form__icon-shopping {
+.form__icon-shopping {}
+
+.form__button-shopping,
+.form__button-search {
     min-width       : 30px;
     color           : #fff;
     background-color: #cddc39;
     cursor          : pointer;
     text-align      : center;
     border          : #ccc7c8 solid 1px;
-    padding         : 2px;
+    padding         : 4px;
 }
 
 .form__icon-search:hover,
